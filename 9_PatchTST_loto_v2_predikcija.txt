@@ -1,5 +1,5 @@
 
 --- 2026-05-25 20:15:58.648934 (seed=39, N=4620, max_steps=200) ---
-PatchTST -> [6, 10, 13, 18, 19, 32, 33]  (suma=131, neparnih=3/7, niskih(<=19)=5/7, raspon=27)
+PatchTST -> [6, x, 13, y, 19, z, 33]  (suma=131, neparnih=3/7, niskih(<=19)=5/7, raspon=27)
 back-test: hits/7=1.240, AUC=0.496, LRAP=0.244; baseline=1.256
 elapsed=350.9s
