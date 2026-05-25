@@ -3,30 +3,6 @@
 
 
 """
-Polazni kod treba samo da se promeni da radi nad mojim CSV-om, a sintetička od demoa izbaciti. 
-
-Razumeo. Pravilo za sve buduće modele:
-
-polazni kod iz članka se direktno menja da radi nad tvojim loto CSV-om
-sintetička demo data, neiskorišćeni delovi, sve što ne pripada polaznom zadatku se izbacuje
-predviđa se sledeće loto kolo + back-test, snimanje u TXT
-bez paralelnih "novih" klasa ispod polaznog, bez pitanja
-
-
-
-
-Jasno. Ponavljam svojim rečima da budem siguran:
-
-Polazni kod iz članka prvo mora da proradi kakav jeste (sintetički demo, ništa ne ruši).
-Tek posle se polazni direktno menja da radi nad tvojim loto CSV-om — sintetička demo data se izbacuje, svi neiskorišćeni delovi se izbacuju.
-Cilj v2 fajla: predviđa sledeće loto kolo + back-test, snimanje rezultata u TXT.
-Bez paralelnih „novih" klasa ispod polaznog, bez postavljanja pitanja kad je sve jasno.
-"""
-
-
-
-
-"""
 Hibridne arhitekture za predikciju koje kombinuju deep learning i klasične time-series modele.
 
 9. PatchTST: Channel-Independent Patching Transformer
@@ -69,8 +45,8 @@ SEED = 39
 random.seed(SEED)
 np.random.seed(SEED)
 
-CSV_PATH = "/Users/4c/Desktop/GHQ/KvantniRegresor/loto7hh_4620_k41.csv"
-OUT_TXT = Path("/Users/4c/Desktop/GHQ/TimeSeriesModels/9_PatchTST_loto_v2_predikcija.txt")
+CSV_PATH = "/loto7hh_4620_k41.csv"
+OUT_TXT = Path("/9_PatchTST_loto_v2_predikcija.txt")
 
 N_MIN, N_MAX = 1, 39
 K = 7
@@ -300,7 +276,7 @@ TPU available: False, using: 0 TPU cores
 Predicting DataLoader 0: 100%|████| 2/2 [00:00<00:00, 127.19it/s]
 
 Predikcija sledeće Loto 7/39 kombinacije:
-PatchTST -> [6, 10, 13, 18, 19, 32, 33]  (suma=131, neparnih=3/7, niskih(<=19)=5/7, raspon=27)
+PatchTST -> [6, x, 13, y, 19, z, 33]  (suma=131, neparnih=3/7, niskih(<=19)=5/7, raspon=27)
 
 Back-test (poslednjih 100 izvlačenja):
 model          hits/7    hit%     AUC    LRAP
